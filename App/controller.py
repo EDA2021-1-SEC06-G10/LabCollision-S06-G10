@@ -19,13 +19,12 @@
  * You should have received a copy of the GNU General Public License
  * along withthis program.  If not, see <http://www.gnu.org/licenses/>.
  """
-# TODO: importaciones para medir tiempo y memoria
+
 import time
 import tracemalloc
 import config as cf
 import model
 import csv
-
 
 """
 El controlador se encarga de mediar entre la vista y el modelo.
@@ -51,7 +50,7 @@ def loadData(catalog):
     Carga los datos de los archivos y cargar los datos en la
     estructura de datos
     """
-    # TODO: modificaciones para medir el tiempo y memoria
+    
     delta_time = -1.0
     delta_memory = -1.0
 
@@ -107,7 +106,6 @@ def loadBooksTags(catalog):
 # ======================================
 # Funciones de consulta sobre el catálogo
 # ======================================
-
 
 def getBestBooks(catalog, number):
     """
@@ -167,7 +165,7 @@ def getBooksYear(catalog, year):
     Retorna los libros que fueron publicados
     en un año
     """
-    # TODO: modificaciones para medir el tiempo y memoria
+   
     books = None
     delta_time = -1.0
     delta_memory = -1.0
@@ -193,8 +191,7 @@ def sortBooksByYear(catalog, year, fraction, rank):
     Retorna los libros que fueron publicados
     en un año ordenados por rating
     """
-    # TODO: modificaciones para medir el tiempo y memoria
-    # respuesta por defecto
+    
     books = None
     delta_time = -1.0
     delta_memory = -1.0
